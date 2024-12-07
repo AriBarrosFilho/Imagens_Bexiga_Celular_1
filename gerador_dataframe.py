@@ -14,8 +14,6 @@ for pasta in lista_pastas: lista_caminho_imagens.extend(list(map(lambda x: os.pa
 # Remove o caminho das imagens que contém o nome 'balança'
 lista_caminho_imagens = list(filter(lambda x: x if 'balança' not in x else None, lista_caminho_imagens))
 
-print(lista_caminho_imagens)
-
 # Ordena a lista de acordo com o ID da bexiga
 lista_caminho_imagens = sorted(lista_caminho_imagens, key = lambda x: int(x.split('_')[0]))
 
